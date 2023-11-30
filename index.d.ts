@@ -116,6 +116,7 @@ export interface SelectListProps  {
 
 
 export interface MultipleSelectListProps  {
+    showSelected?: boolean,
     /**
     * Fn to set Selected option value which will be stored in your local state
     */

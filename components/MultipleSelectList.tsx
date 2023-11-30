@@ -16,6 +16,7 @@ import { MultipleSelectListProps } from '..';
 type L1Keys = { key?: any; value?: any; disabled?: boolean | undefined }
 
 const MultipleSelectList: React.FC<MultipleSelectListProps> = ({
+        showSelected = true,
         fontFamily,
         setSelected,
         placeholder,
@@ -332,7 +333,7 @@ const MultipleSelectList: React.FC<MultipleSelectListProps> = ({
                                 
                             </ScrollView>
                             
-                                {
+                                {showSelected &&   
                                     (selectedval?.length > 0)
                                     ?
                                         <Pressable>
