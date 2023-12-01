@@ -22,6 +22,7 @@ const MultipleSelectList: React.FC<MultipleSelectListProps> = ({
         placeholder,
         boxStyles,
         inputStyles,
+        placeholderStyles,
         dropdownStyles,
         dropdownItemStyles,
         dropdownTextStyles,
@@ -187,7 +188,7 @@ const MultipleSelectList: React.FC<MultipleSelectListProps> = ({
                     </TouchableOpacity>
                 :
                     <TouchableOpacity style={[styles.wrapper,boxStyles]} onPress={() => { if(!dropdown){ slidedown() }else{ slideup() } }}>
-                        <Text style={[{fontFamily},inputStyles]}>{ (selectedval == "") ? (placeholder) ? placeholder : 'Select option' : selectedval  }</Text>
+                        <Text style={[{fontFamily},placeholderStyles]}>{ (selectedval == "") ? (placeholder) ? placeholder : 'Select option' : selectedval  }</Text>
                         {
                             (!arrowicon)
                             ?

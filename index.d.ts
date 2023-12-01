@@ -138,6 +138,11 @@ export interface MultipleSelectListProps  {
     inputStyles?: TextStyle,
 
     /**
+    *  	Additional styles for text of select box
+    */
+    placeholderStyles?: TextStyle,
+
+    /**
     *  	Additional styles for dropdown scrollview 
     */
     dropdownStyles?:ViewStyle,
